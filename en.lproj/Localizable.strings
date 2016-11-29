@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  iOSHeadPhone
+
+  Created by EDF on 16/11/22.
+  Copyright © 2016年 EDF. All rights reserved.
+*/
+"voiceStyle"="EQ SETTING";
+"disconnectInfo"="Please connect your headphone";
+"set"="SETTING";
+"appVersion"="Software Version:";
+"headPhoneVersion" = "Headphone firmware version";
+"aboutUs"="About EDIFIER";
+"currentHeadPhoneVersion"="Current Firmware Version:";
+"newHeadPhoneVersion"="Latest Firmware Version:";
+"updateHeadPhone"="Upgrade firmware";
+"updateOver"="Complete";
+"manbuzheInfo"="\tEdifier specializes in premium sound systems that showcase technological innovation and design elegance. We deliver outstanding audio experience through a wide range of headphones, speakers and music systems, for personal entertainment and professional excellence.\n\n\tEstablished in May 1996 in Beijing, China, Edifier is the brainchild of a small group of enterprising music lovers. Guided by the principle “a passion for sound” over the past two decades, Edifier has emerged as a world-class designer and manufacturer of award-winning sound systems.\n\n\tThroughout our journey, we adapt to the way music is made, shared and enjoyed. We pride ourselves on products that showcase bold design and premium quality, but at the same time affordable.\n\n\tToday, Edifier serves music lovers worldwide through our distributors in over 70 countries, with operations in North America, South America, Europe, the Middle East, and Asia Pacific regions.";
+"styleDefault"="Flat";
+"styleRock"="Rock";
+"styleJaze"="Jack";
+"stylePop"="Pop";
+"styleClassical"="Classical";

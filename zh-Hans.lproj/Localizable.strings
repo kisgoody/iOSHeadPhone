@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  iOSHeadPhone
+
+  Created by EDF on 16/11/22.
+  Copyright © 2016年 EDF. All rights reserved.
+*/
+"voiceStyle"="音效";
+"disconnectInfo"="您的设备未连接耳机\n请连接后使用";
+"set"="设置";
+"appVersion"="app版本";
+"headPhoneVersion" = "固件版本信息";
+"aboutUs"="关于漫步者";
+"currentHeadPhoneVersion"="当前固件版本：";
+"newHeadPhoneVersion"="最新固件版本：";
+"updateHeadPhone"="升级固件";
+"updateOver"="固件升级完成";
+"manbuzheInfo"="\tEDIFIER漫步者企业，1996年创立于北京，专注于音频技术研究开发与产品应用，核心产品包括多媒体及家用音响、耳机、汽车音响、专业音响等品类。 2012年，全资收购日本STAX Ltd.，将享誉全球的顶级耳机品牌STAX揽入麾下。\n\n\t作为中国企业，漫步者拥有从产品创意，到工业设计、产品研发、规模化生产、自主营销的专业团队，并于1997年开始拓展海外市场，以中国自主品牌的形象走向世界。\n\n\t如今，“漫步者”及“EDIFIER”商标，已经在美、德、英、法、意、加、日、澳、俄等八十多个国家和地区注册了国际商标，产品销售跻身全球同行前列。\n\n\t作为一家注重自主设计的企业，漫步者多款产品屡获“红点设计奖”（Red Dot Design Awards）、“IF产品设计奖”（iF Design Award）、“CES产品设计与创新奖”（CES Design and Engineering Award）、“日本工业设计协会优良设计奖”（JIDPO Good Design Award）等多项国际荣誉，为中国品牌赢得了骄傲。\n\n\t2010年，漫步者在深圳A股上市。\n\n\t坚持“追求完美音质”的产品理念，秉承“诚信、专注、创造、激情”的企业价值观，漫步者人正在为“将漫步者建设成为全球知名音响品牌”的目标而不懈努力。";
+"styleDefault"="默认";
+"styleRock"="摇滚";
+"styleJaze"="爵士";
+"stylePop"="流行";
+"styleClassical"="古典";
