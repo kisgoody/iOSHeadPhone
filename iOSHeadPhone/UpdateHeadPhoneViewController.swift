@@ -34,6 +34,8 @@ class UpdateHeadPhoneViewController: UIViewController {
         currentVersionStr = NSLocalizedString("currentHeadPhoneVersion", comment: "")
         newVersionStr = NSLocalizedString("newHeadPhoneVersion", comment: "")
         updateStr = NSLocalizedString("updateHeadPhone", comment: "")
+        title = NSLocalizedString("headPhoneVersion", comment: "")
+        self.navigationItem.title = title
 
         升级固件.setTitle(updateStr, forState: .Normal)
         当前版本.text = currentVersionStr
@@ -84,6 +86,9 @@ class UpdateHeadPhoneViewController: UIViewController {
         let dev = CLEADevice.shared()
         当前版本.text = currentVersionStr!+"V\(dev.fwRevision)"
         最新版本.text = newVersionStr!+"V\(dev.loadedFWVersion)"
+        if dev.fwRevision==dev.loadedFWVersion {
+        升级固件.hidden = true
+        }
         
         let status = dev.getStatus()
         var info = ""
@@ -131,7 +136,7 @@ class UpdateHeadPhoneViewController: UIViewController {
         
         if status == CLEADevice.STATUS_NOT_CONNECTED ||
             status == CLEADevice.STATUS_NOT_RESPONDING {
-//                self.navigationController?.popViewControllerAnimated(true)
+                self.navigationController?.popViewControllerAnimated(true)
         } else {
             
         }

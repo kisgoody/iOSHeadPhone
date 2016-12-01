@@ -28,7 +28,7 @@
         <!--EQ SETTING-->
         <scene sceneID="2UH-GJ-bVW">
             <objects>
-                <viewController id="Eh1-Jr-eXw" customClass="ViewController" customModule="iOSHeadPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Eh1-Jr-eXw" customClass="ViewController" customModule="Headphones" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y2N-Va-6YP"/>
                         <viewControllerLayoutGuide type="bottom" id="M2P-dF-zNN"/>
@@ -40,8 +40,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qn7-fK-mGa">
                                 <rect key="frame" x="175" y="124" width="250" height="180"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_disconnect" translatesAutoresizingMaskIntoConstraints="NO" id="ivV-UQ-dLQ">
-                                        <rect key="frame" x="79" y="0.0" width="92" height="92"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo_disconnect" translatesAutoresizingMaskIntoConstraints="NO" id="ivV-UQ-dLQ">
+                                        <rect key="frame" x="101" y="0.0" width="48" height="49"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpf-On-RRR">
                                         <rect key="frame" x="105" y="160" width="40" height="20"/>
@@ -264,7 +264,7 @@
         <!--设置-->
         <scene sceneID="6Bp-NH-emS">
             <objects>
-                <viewController id="s7H-zA-791" customClass="SetViewController" customModule="iOSHeadPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s7H-zA-791" customClass="SetViewController" customModule="Headphones" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qNd-Oq-8uz"/>
                         <viewControllerLayoutGuide type="bottom" id="W73-Uy-hmv"/>
@@ -442,7 +442,7 @@
         <!--固件版本信息-->
         <scene sceneID="M4T-mo-hGq">
             <objects>
-                <viewController id="Con-ML-gYy" customClass="UpdateHeadPhoneViewController" customModule="iOSHeadPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Con-ML-gYy" customClass="UpdateHeadPhoneViewController" customModule="Headphones" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zcr-bd-QEK"/>
                         <viewControllerLayoutGuide type="bottom" id="Nk9-aO-Rrx"/>
@@ -574,7 +574,7 @@
         <!--About Us View Controller-->
         <scene sceneID="ikA-yp-Bsa">
             <objects>
-                <viewController id="Taz-aq-3mg" customClass="AboutUsViewController" customModule="iOSHeadPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Taz-aq-3mg" customClass="AboutUsViewController" customModule="Headphones" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m4h-Vm-cdJ"/>
                         <viewControllerLayoutGuide type="bottom" id="yqO-aM-Abs"/>

@@ -38,7 +38,7 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         self.navigationController!.navigationBar.barStyle = UIBarStyle.Black
         clicks()//设置按钮点击事件
         readSet()//读取上一次设置的音效
-        Logo.start.read()
+//        Logo.start.read()
     }
 
     
@@ -151,10 +151,10 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         self.connectStatusChange()
         if self.isConnect {
             self.viewAnimation(self.connectView,isBig: true)
-            
+            self.navigationItem.title = NSLocalizedString("voiceStyle", comment: "")
         }else {
             self.viewAnimation(self.disconnectView,isBig: true)
-
+            self.navigationItem.title = NSLocalizedString("devicesCheck", comment: "")
         }
         
 
@@ -226,10 +226,9 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
 
         if status == CLEADevice.STATUS_NOT_CONNECTED ||
             status == CLEADevice.STATUS_NOT_RESPONDING {
-                connecting = true
+                connecting = false
         } else {
             if dev.responeStyle < 5 {
-//                YMLoadingView.shareInstance().makeToast("数据返回:\(dev.responeStyle)")
                 updateButtonStatus(Int(dev.responeStyle))//更新按钮状态
             }
             connecting = true

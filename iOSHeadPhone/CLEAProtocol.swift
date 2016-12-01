@@ -155,8 +155,7 @@ class CLEAProtocol: NSObject, NSStreamDelegate {
     
     func sendStyleData(style: UInt8){
         let dataPacket: [UInt8] = [CLEAProtocol.WRITE_TAG,style]
-        Logo.start.save("sendStyleData: \(style)")
-//        log("update FW request", obj: self)
+//        Logo.start.save("sendStyleData: \(style)")
         objc_sync_enter(self)
         dataPackets.queue(dataPacket)
         sendRequest()
@@ -266,12 +265,7 @@ class CLEAProtocol: NSObject, NSStreamDelegate {
         var dataPacket = [UInt8](count: 128, repeatedValue: 0)
         if let cnt = clEASession?.inputStream?.read(&dataPacket, maxLength: dataPacket.count) {
             log("<<<<<  packet sz \(cnt) packet tag \(dataPacket[0]) data \(dataPacket[1]) \(dataPacket[2]) \(dataPacket[3])...", obj: self)
-            Logo.start.save("parseResponse: packet sz \(cnt) packet tag \(dataPacket[0]) data \(dataPacket[1]) \(dataPacket[2]) \(dataPacket[3])...")
-//            if(CLEAProtocol.READ_TAG==dataPacket[0]&&cnt==2){
-//                Logo.start.save("parseResponse: 音效数据接收")
-//                CLEADevice.shared().setStatus(dataPacket, count: cnt)
-//                return true
-//            }
+
 
             if (cnt >= 2) {
                 switch (dataPacket[0]) {

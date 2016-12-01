@@ -13,7 +13,8 @@ import StoreKit
 
 class CheckUpdate: NSObject,SKStoreProductViewControllerDelegate {
 //    http://itunes.apple.com/cn/lookup?id=1065779983
-    let appId = "1065779983"
+//    http://itunes.apple.com/cn/lookup?id=1181257624
+    let appId = "1181257624"
     var url: String
     var view: UIViewController
     
@@ -34,8 +35,7 @@ class CheckUpdate: NSObject,SKStoreProductViewControllerDelegate {
         let url = NSURL(string: path)
         let request = NSMutableURLRequest(URL: url!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10.0)
         request.HTTPMethod = "POST"
-        
-        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue()) { (response, data, error) in
+        let dataTask = NSURLSession.sharedSession().dataTaskWithRequest(request){ (data, response, error) -> Void in
             let receiveStatusDic = NSMutableDictionary()
             if data != nil {
                 do {
@@ -55,6 +55,7 @@ class CheckUpdate: NSObject,SKStoreProductViewControllerDelegate {
                         }
                     }
                 }catch let error {
+                    
                     log("checkUpdate -------- \(error)", obj: self)
                     receiveStatusDic.setValue("0", forKey: "status")
                 }
@@ -62,12 +63,13 @@ class CheckUpdate: NSObject,SKStoreProductViewControllerDelegate {
                 receiveStatusDic.setValue("0", forKey: "status")            }
             self.performSelectorOnMainThread("checkUpdateWithData:", withObject: receiveStatusDic, waitUntilDone: false)
         }
+        dataTask.resume()
     }
     
     @objc private func checkUpdateWithData(data: NSDictionary) {
         let status = data["status"] as? String
         let localVersion = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
-//        log("localVersion: \(localVersion)",obj: self)
+        log("localVersion: \(localVersion)",obj: self)
         if status == "1" {
             let storeVersion = data["version"] as! String
 //            log("storeversion: \(storeVersion)",obj: self)
@@ -75,17 +77,23 @@ class CheckUpdate: NSObject,SKStoreProductViewControllerDelegate {
             return
         }
         if let storeVersion = NSUserDefaults.standardUserDefaults().objectForKey("Version") as? String {
-//            log("storeversion_status: \(storeVersion)",obj: self)
+            log("storeversion_status: \(storeVersion)",obj: self)
             self.compareVersion(localVersion, storeVersion: storeVersion)
         }
     }
     
     private func compareVersion(localVersion: String, storeVersion: String) {
-        
         if localVersion != storeVersion{
-            let controller = UIAlertController(title: "app版本更新", message: "最新版本为：\(storeVersion)\n当前版本为：\(localVersion)\n请立即更新到最新版本" , preferredStyle: .Alert)
-            let cacleAction = UIAlertAction(title: "忽略", style: .Cancel, handler: nil)
-            let okAction = UIAlertAction(title: "更新", style: .Default, handler: { (obj: UIAlertAction) -> Void in
+            let title = NSLocalizedString("updateTitle", comment: "")
+            let newVersion = NSLocalizedString("lastVersion", comment: "")
+            let currentVersion = NSLocalizedString("currentVersion", comment: "")
+            let pleaseUpdate = NSLocalizedString("pleaseUpdate", comment: "")
+            let ignore = NSLocalizedString("ignore", comment: "")
+            let update = NSLocalizedString("update", comment: "")
+            
+            let controller = UIAlertController(title: title, message: "\(newVersion)\(storeVersion)\n\(currentVersion)\(localVersion)\n\(pleaseUpdate)" , preferredStyle: .Alert)
+            let cacleAction = UIAlertAction(title: ignore, style: .Cancel, handler: nil)
+            let okAction = UIAlertAction(title: update, style: .Default, handler: { (obj: UIAlertAction) -> Void in
                 self.openAppStore(self.url)
             })
             controller.addAction(cacleAction)
