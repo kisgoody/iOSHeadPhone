@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5A2A443F1DE41EDD006B7B97"
-               BuildableName = "iOSHeadPhone.app"
+               BuildableName = "Headphones.app"
                BlueprintName = "iOSHeadPhone"
                ReferencedContainer = "container:iOSHeadPhone.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A2A443F1DE41EDD006B7B97"
-            BuildableName = "iOSHeadPhone.app"
+            BuildableName = "Headphones.app"
             BlueprintName = "iOSHeadPhone"
             ReferencedContainer = "container:iOSHeadPhone.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A2A443F1DE41EDD006B7B97"
-            BuildableName = "iOSHeadPhone.app"
+            BuildableName = "Headphones.app"
             BlueprintName = "iOSHeadPhone"
             ReferencedContainer = "container:iOSHeadPhone.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A2A443F1DE41EDD006B7B97"
-            BuildableName = "iOSHeadPhone.app"
+            BuildableName = "Headphones.app"
             BlueprintName = "iOSHeadPhone"
             ReferencedContainer = "container:iOSHeadPhone.xcodeproj">
          </BuildableReference>

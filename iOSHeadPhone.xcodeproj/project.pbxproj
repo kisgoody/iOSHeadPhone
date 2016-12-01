@@ -14,6 +14,17 @@
 		5A2A444E1DE41EDD006B7B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2A444C1DE41EDD006B7B97 /* LaunchScreen.storyboard */; };
 		5A2A44591DE41EDD006B7B97 /* iOSHeadPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A44581DE41EDD006B7B97 /* iOSHeadPhoneTests.swift */; };
 		5A2A44641DE41EDD006B7B97 /* iOSHeadPhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A44631DE41EDD006B7B97 /* iOSHeadPhoneUITests.swift */; };
+		5A2A44751DE42620006B7B97 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A2A44771DE42620006B7B97 /* Localizable.strings */; };
+		5A2A44821DE43381006B7B97 /* stm8l10x_fw.s19 in Resources */ = {isa = PBXBuildFile; fileRef = 5A2A44811DE43381006B7B97 /* stm8l10x_fw.s19 */; };
+		5A2A44861DE43391006B7B97 /* CheckUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A44831DE43391006B7B97 /* CheckUpdate.swift */; };
+		5A2A44871DE43391006B7B97 /* CLEADevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A44841DE43391006B7B97 /* CLEADevice.swift */; };
+		5A2A44881DE43391006B7B97 /* CLEAProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A44851DE43391006B7B97 /* CLEAProtocol.swift */; };
+		5A2A448A1DE4439D006B7B97 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A44891DE4439D006B7B97 /* Logo.swift */; };
+		5A55E8501DE53A1F002415DB /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A55E84F1DE53A1E002415DB /* SetViewController.swift */; };
+		5A58E7201DE6670400C98781 /* YMLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A58E71F1DE6670400C98781 /* YMLoadingView.swift */; };
+		5A58E7251DE68CD600C98781 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A58E7241DE68CD500C98781 /* AboutUsViewController.swift */; };
+		5A605EBC1DEE5596007E53E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A605EBE1DEE5596007E53E8 /* InfoPlist.strings */; };
+		5A64C2F01DE5881900ECBF09 /* UpdateHeadPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A64C2EF1DE5881900ECBF09 /* UpdateHeadPhoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A2A44401DE41EDD006B7B97 /* iOSHeadPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSHeadPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2A44401DE41EDD006B7B97 /* Headphones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Headphones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2A44431DE41EDD006B7B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A2A44451DE41EDD006B7B97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A2A44481DE41EDD006B7B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,20 @@
 		5A2A445F1DE41EDD006B7B97 /* iOSHeadPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSHeadPhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2A44631DE41EDD006B7B97 /* iOSHeadPhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSHeadPhoneUITests.swift; sourceTree = "<group>"; };
 		5A2A44651DE41EDD006B7B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A2A44761DE42620006B7B97 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5A2A44781DE42625006B7B97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A2A44811DE43381006B7B97 /* stm8l10x_fw.s19 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stm8l10x_fw.s19; sourceTree = "<group>"; };
+		5A2A44831DE43391006B7B97 /* CheckUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckUpdate.swift; sourceTree = "<group>"; };
+		5A2A44841DE43391006B7B97 /* CLEADevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLEADevice.swift; sourceTree = "<group>"; };
+		5A2A44851DE43391006B7B97 /* CLEAProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLEAProtocol.swift; sourceTree = "<group>"; };
+		5A2A44891DE4439D006B7B97 /* Logo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		5A55E84F1DE53A1E002415DB /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetViewController.swift; path = ../SetViewController.swift; sourceTree = "<group>"; };
+		5A58E71F1DE6670400C98781 /* YMLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMLoadingView.swift; sourceTree = "<group>"; };
+		5A58E7231DE67AEC00C98781 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		5A58E7241DE68CD500C98781 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		5A605EBD1DEE5596007E53E8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		5A605EBF1DEE559A007E53E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A64C2EF1DE5881900ECBF09 /* UpdateHeadPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateHeadPhoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +102,9 @@
 		5A2A44371DE41EDC006B7B97 = {
 			isa = PBXGroup;
 			children = (
+				5A605EBE1DEE5596007E53E8 /* InfoPlist.strings */,
+				5A2A44811DE43381006B7B97 /* stm8l10x_fw.s19 */,
+				5A2A44771DE42620006B7B97 /* Localizable.strings */,
 				5A2A44421DE41EDD006B7B97 /* iOSHeadPhone */,
 				5A2A44571DE41EDD006B7B97 /* iOSHeadPhoneTests */,
 				5A2A44621DE41EDD006B7B97 /* iOSHeadPhoneUITests */,
@@ -87,7 +115,7 @@
 		5A2A44411DE41EDD006B7B97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A2A44401DE41EDD006B7B97 /* iOSHeadPhone.app */,
+				5A2A44401DE41EDD006B7B97 /* Headphones.app */,
 				5A2A44541DE41EDD006B7B97 /* iOSHeadPhoneTests.xctest */,
 				5A2A445F1DE41EDD006B7B97 /* iOSHeadPhoneUITests.xctest */,
 			);
@@ -97,12 +125,21 @@
 		5A2A44421DE41EDD006B7B97 /* iOSHeadPhone */ = {
 			isa = PBXGroup;
 			children = (
+				5A58E71F1DE6670400C98781 /* YMLoadingView.swift */,
+				5A55E84F1DE53A1E002415DB /* SetViewController.swift */,
+				5A2A44891DE4439D006B7B97 /* Logo.swift */,
+				5A2A44831DE43391006B7B97 /* CheckUpdate.swift */,
+				5A2A44841DE43391006B7B97 /* CLEADevice.swift */,
 				5A2A44431DE41EDD006B7B97 /* AppDelegate.swift */,
+				5A2A44851DE43391006B7B97 /* CLEAProtocol.swift */,
 				5A2A44451DE41EDD006B7B97 /* ViewController.swift */,
 				5A2A44471DE41EDD006B7B97 /* Main.storyboard */,
 				5A2A444A1DE41EDD006B7B97 /* Assets.xcassets */,
 				5A2A444C1DE41EDD006B7B97 /* LaunchScreen.storyboard */,
 				5A2A444F1DE41EDD006B7B97 /* Info.plist */,
+				5A64C2EF1DE5881900ECBF09 /* UpdateHeadPhoneViewController.swift */,
+				5A58E7231DE67AEC00C98781 /* MyPlayground.playground */,
+				5A58E7241DE68CD500C98781 /* AboutUsViewController.swift */,
 			);
 			path = iOSHeadPhone;
 			sourceTree = "<group>";
@@ -142,7 +179,7 @@
 			);
 			name = iOSHeadPhone;
 			productName = iOSHeadPhone;
-			productReference = 5A2A44401DE41EDD006B7B97 /* iOSHeadPhone.app */;
+			productReference = 5A2A44401DE41EDD006B7B97 /* Headphones.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5A2A44531DE41EDD006B7B97 /* iOSHeadPhoneTests */ = {
@@ -193,6 +230,7 @@
 				TargetAttributes = {
 					5A2A443F1DE41EDD006B7B97 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = H23MN65AK5;
 					};
 					5A2A44531DE41EDD006B7B97 = {
 						CreatedOnToolsVersion = 7.2;
@@ -230,7 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A2A444E1DE41EDD006B7B97 /* LaunchScreen.storyboard in Resources */,
+				5A605EBC1DEE5596007E53E8 /* InfoPlist.strings in Resources */,
+				5A2A44751DE42620006B7B97 /* Localizable.strings in Resources */,
 				5A2A444B1DE41EDD006B7B97 /* Assets.xcassets in Resources */,
+				5A2A44821DE43381006B7B97 /* stm8l10x_fw.s19 in Resources */,
 				5A2A44491DE41EDD006B7B97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A58E7251DE68CD600C98781 /* AboutUsViewController.swift in Sources */,
+				5A2A44871DE43391006B7B97 /* CLEADevice.swift in Sources */,
+				5A2A44881DE43391006B7B97 /* CLEAProtocol.swift in Sources */,
+				5A58E7201DE6670400C98781 /* YMLoadingView.swift in Sources */,
 				5A2A44461DE41EDD006B7B97 /* ViewController.swift in Sources */,
 				5A2A44441DE41EDD006B7B97 /* AppDelegate.swift in Sources */,
+				5A64C2F01DE5881900ECBF09 /* UpdateHeadPhoneViewController.swift in Sources */,
+				5A55E8501DE53A1F002415DB /* SetViewController.swift in Sources */,
+				5A2A448A1DE4439D006B7B97 /* Logo.swift in Sources */,
+				5A2A44861DE43391006B7B97 /* CheckUpdate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +358,24 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		5A2A44771DE42620006B7B97 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A2A44761DE42620006B7B97 /* zh-Hans */,
+				5A2A44781DE42625006B7B97 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		5A605EBE1DEE5596007E53E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A605EBD1DEE5596007E53E8 /* zh-Hans */,
+				5A605EBF1DEE559A007E53E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -329,7 +396,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BEIJING EDIFIER TECHNOLOGY CO.,LTD. (H23MN65AK5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: BEIJING EDIFIER TECHNOLOGY CO.,LTD. (H23MN65AK5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -351,6 +419,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,7 +443,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: BEIJING EDIFIER TECHNOLOGY CO.,LTD. (H23MN65AK5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: BEIJING EDIFIER TECHNOLOGY CO.,LTD. (H23MN65AK5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -389,6 +459,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -399,10 +470,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSHeadPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.edifier.iOSHeadPhone;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edifier.iOSHeadphone;
+				PRODUCT_NAME = Headphones;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +485,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSHeadPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.edifier.iOSHeadPhone;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edifier.iOSHeadphone;
+				PRODUCT_NAME = Headphones;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +563,7 @@
 				5A2A446A1DE41EDD006B7B97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A2A446B1DE41EDD006B7B97 /* Build configuration list for PBXNativeTarget "iOSHeadPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +572,7 @@
 				5A2A446D1DE41EDD006B7B97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A2A446E1DE41EDD006B7B97 /* Build configuration list for PBXNativeTarget "iOSHeadPhoneUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +581,7 @@
 				5A2A44701DE41EDD006B7B97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
