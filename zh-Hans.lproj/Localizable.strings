@@ -6,6 +6,7 @@
   Copyright © 2016年 EDF. All rights reserved.
 */
 "voiceStyle"="音效";
+"devicesCheck"="设备检测";
 "disconnectInfo"="您的设备未连接耳机\n请连接后使用";
 "set"="设置";
 "appVersion"="app版本";
@@ -21,3 +22,9 @@
 "styleJaze"="爵士";
 "stylePop"="流行";
 "styleClassical"="古典";
+"updateTitle"="检测更新";
+"lastVersion"="最新版本：";
+"currentVersion"="当前版本：";
+"pleaseUpdate"="请更新到最新版本";
+"ignore"="忽略";
+"update"="更新";

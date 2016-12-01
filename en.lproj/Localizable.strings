@@ -6,10 +6,11 @@
   Copyright © 2016年 EDF. All rights reserved.
 */
 "voiceStyle"="EQ SETTING";
+"devicesCheck"="Equipment Inspection";
 "disconnectInfo"="Please connect your headphone";
 "set"="SETTING";
 "appVersion"="Software Version:";
-"headPhoneVersion" = "Headphone firmware version";
+"headPhoneVersion" = "Headphone Information";
 "aboutUs"="About EDIFIER";
 "currentHeadPhoneVersion"="Current Firmware Version:";
 "newHeadPhoneVersion"="Latest Firmware Version:";
@@ -21,3 +22,9 @@
 "styleJaze"="Jack";
 "stylePop"="Pop";
 "styleClassical"="Classical";
+"updateTitle"="Check for updates";
+"lastVersion"="Latest version:";
+"currentVersion"="Current version:";
+"pleaseUpdate"="Please update to the latest version";
+"ignore"="Ignore";
+"update"="Update";
